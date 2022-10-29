@@ -1,0 +1,385 @@
+/* <!-- Made by Navyansh Kothari 
+github: @navyansh1 --> */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+
+header{
+    width: 100%;
+    /* vh -> view height, so 70vh maeans it takes 70% of the screen height  */
+    height: 70vh; 
+    /* if anything goes beyond the page size and overlows then its hidden, thus not looking bad */
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+    margin-bottom: 2rem;
+
+}
+
+.header-image{
+    width: 100%;
+    position: absolute;
+    top: -20vh;
+    z-index: -1;
+
+}
+
+.header-image img{
+    width:100%; 
+    height: 118%; 
+}
+
+/* Flexbox and Grid are important topics in css */
+/* flexbox -> content goes from left to right in a tag */
+.nav{
+    display: flex;
+    justify-content: space-between ; 
+    align-items: centre;
+    color: white;
+    font-size: 1rem;
+    margin: 0 40px;
+
+
+    /* justify-content == horizontally aligns the content to centre */
+    /* align-item == vertically aligns the content to centre */
+
+}
+
+.nav-bar{
+    list-style: none;
+    font-weight: lighter;
+    display: flex;
+    gap:1.5rem;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+
+.logo{
+    width: 21vw; 
+    /* vw means view width */
+}
+
+.head h3{
+    font-size: 2.1rem;
+    color: whitesmoke;
+    font-weight: 400;
+    margin-bottom:50px ;
+}
+
+.search{
+    display: flex;
+    /* display flex arranges content in horizontal manner */
+    width: 55vw;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+    padding: 8px 4px;
+}
+
+.search .search-item{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    
+}
+.search .search-item p{
+    color: gray;
+    padding-right: 10px;
+    border-right:1px solid gray;
+    font-size: 15px;
+    margin-right: 10px;
+    margin: 10px;
+}
+
+.search .search-item input{
+    outline: none;
+    border: none;
+    width: 400%;
+    padding-left:10px;
+    font-size: 15px;
+}
+
+.search .search-item:first-child{
+    width: 27%;
+    color: palevioletred;
+    
+}
+
+.search .search-item:last-child{
+    width: 70%;
+    color: gray;
+}
+
+
+
+
+
+/* SECTION 1 */
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+
+
+}
+
+/* for that white photoframe card */
+.section-1 .section-1-item{
+    position: relative;
+    width: 20rem;
+    margin: 8px 5px;
+    overflow: visible;
+    border-radius: 10px;
+    /* border radius is for rounded corners */
+    background: rgb(203, 200, 200);
+    border: 1px solid rgba(255, 255, 255, 0.563);
+    box-shadow: 0 2px 4px rgb(190, 172, 172);
+    
+
+}
+
+/* for that photo */
+.section-1 .section-1-item img {
+    width: 100%;
+    border: 40px;
+    border: 1px solid grey;
+    border-radius: 14px;
+    z-index: -2;
+    
+}
+
+
+/* for white box below the photo */
+.section-1 .section-1-item .items-details {
+    position: absolute;
+    bottom: 0px;
+    align-content: center;
+    /* border: 0 0 10px 10px; */
+    background: white;
+    width: 100.6%;
+    height: 25%;
+    z-index: 2;
+}
+
+.section-1 .section-1-item .items-details .item-head{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: -10px;
+    
+}
+
+.section-1 .section-1-item .items-details .item-subhead{
+    font-size: 13px;
+    margin-left: 16px;
+    color: grey;
+    
+}
+
+
+
+
+
+
+/* SECTION 2 */
+
+.section-2{
+    width:1080px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+
+/* this for "Popular locality in and around Chennai"  line */
+.section-2-heading {
+    font-size: 2rem;
+    /* rem is a relative unit in css */
+    line-height: 1.2;
+    font-weight: 400px; 
+
+}
+
+
+/* this is for that container */
+.section-2 .section-2-container .section-2-items{
+    display: flex;
+    /* display flex arranges content in horizontal manner */
+    flex-wrap: wrap; 
+    /* flex wrap keeps approriate spacing between content such that they dont overlap */
+    justify-content: space-between;
+
+}
+
+/* this for the content inside of the container */
+.section-2 .section-2-container .section-2-items .section-2-item{
+    width: 100%;
+    max-width: 26%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(107, 105, 105);
+    /* in box shadow the first is x axis, y axis, spread, colour */
+    padding: 20px;
+
+}
+
+.section-2-item .item-head{
+    font-size: 1.2rem;
+    color: rgb(98, 96, 96);
+    margin: 0%;
+    margin-bottom: 5px;
+    
+}
+
+.section-2-item .item-subhead{
+    font-weight: lighter;
+    color: grey;
+    margin: 0;
+
+}
+
+/* SECTION-3 */
+
+.section-3-heading h1 {
+    font-size: 2rem;
+    /* rem is a relative unit in css */
+    font-weight: 700px; 
+    margin-left: 130px;
+    margin-bottom: -10px;
+
+}
+
+.section-3-heading p {
+    font-size: 1.2rem;
+    /* rem is a relative unit in css */
+    font-weight: 200px; 
+    margin-left: 130px;
+
+}
+
+
+
+
+
+/* SECTION-4 */
+
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.section-4 .section-4-item{
+    position: relative;
+    width: 18rem;
+    margin: 8px 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* border radius is for rounded corners */
+}
+
+.section-4 .section-4-item img {
+    width: 90%;
+    border: 40px;
+    border: 1px solid grey;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.section-4 .section-4-item .items-details {
+    position: absolute;
+    bottom: 0px;
+    height: 28%;
+    z-index: 2;
+}
+
+.section-4 .section-4-item .items-details .item-head{
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-bottom: -10px;
+    color: white;
+    
+}
+
+.section-4 .section-4-item .items-details .item-subhead{
+    font-size: 15px;
+    margin-left: 16px;
+    color: whitesmoke;
+    margin-top: 10px;
+    
+}
+
+
+
+
+
+/* SECTION-5 */
+
+.section-5{
+    height: 620px;
+    background-color: rgba(255, 238, 189, 0.522);
+}
+
+.section-5-container{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-5-img{
+    width: 40%;
+}
+
+.section-5-img img{
+    width: 460px;
+}
+
+.section-5-content h1{
+    font-size: 3.1rem;
+    margin-left: 70px;
+    color: brown;
+}
+
+.section-5-content p{
+    font-size: 1.6rem;
+    margin-left: 70px;
+    margin-top: -39px;
+    color: green
+}
+
+.section-5-download img{
+    margin-left: 70px;
+    width: 30%;
+    
+}
+
+/* we only put .something when something is a only a class */
+/* FOOTER */
+footer{
+    height: 100px;
+    margin-left: 540px;
+    color: grey;
+
+
+}
